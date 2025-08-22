@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <a href="public/Curriculo.pdf" download="Curriculo Victor" class="anchor-text">
+            <a href="public/Curriculo.pdf" id="downloadCv" class="anchor-text">
                 <p>
                     Ver todo o resumo
                     <i class="fa-solid fa-arrow-right"></i>
@@ -169,5 +169,12 @@
         </a>
     </footer>
 </body>
+
+<script>
+    document.getElementById("downloadCv").addEventListener("click", function(e) {
+        e.preventDefault();
+        window.open("public/Curriculo.pdf", "_blank"); 
+    });
+</script>
 
 </html>
